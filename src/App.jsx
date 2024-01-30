@@ -44,6 +44,10 @@ function App() {
     );
   }
 
+  function handleDeleteMovie(id) {
+    setMovies(movies.filter((movie) => movie.id !== id));
+  }
+
   return (
     <>
       <NavBar />
@@ -65,6 +69,9 @@ function App() {
               isFavorite={movie.isFavorite}
               onToggleFavorite={() => {
                 handleToggleFavorite(movie.id);
+              }}
+              onDelete={() => {
+                handleDeleteMovie(movie.id);
               }}
             />
           );
