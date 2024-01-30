@@ -10,14 +10,21 @@ function App() {
       id: 1,
       title: "Der Pate",
       director: "Francis Ford Coppola",
-      released: "1974",
+      released: "1972",
       isFavorite: false,
     },
     {
       id: 2,
       title: "Titanic",
       director: "James Cameron",
-      released: "1994",
+      released: "1997",
+      isFavorite: false,
+    },
+    {
+      id: 3,
+      title: "Das Fenster zum Hof",
+      director: "Alfred Hitchcock",
+      released: "1954",
       isFavorite: false,
     },
   ]);
